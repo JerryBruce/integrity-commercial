@@ -1,0 +1,158 @@
+
+/* ============================================================
+  GLOBAL
+============================================================ */
+
+	.effects .img {
+	  position: relative;
+	  float: left;
+	  width: 100%;
+	  overflow: hidden;
+	}
+	.effects .img:nth-child(n) {
+	  margin-right: 0;
+	}
+	.effects .img:first-child {
+	  margin-left: 0;
+	}
+	.effects .img:last-child {
+	  margin-right: 0;
+	}
+	.effects .img img {
+	  display: block;
+	  margin: 0;
+	  padding: 0;
+	  max-width: 100%;
+	  height: auto;
+	}
+	.overlay {
+	  display: block;
+	  position: absolute;
+	  z-index: 20;
+	  background: rgba(0, 0, 0, 0.5);
+	  overflow: hidden;
+	  -webkit-transition: all 0.5s;
+	  -moz-transition: all 0.5s;
+	  -o-transition: all 0.5s;
+	  transition: all 0.5s;
+	}
+	
+
+/* ============================================================
+  EFFECT 3 - SLIDE IN LEFT
+============================================================ */
+	
+	#grid .overlay {
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right:0;
+	  display:none;
+	  height: 100%;
+	  position:absolute;
+	  
+	}
+	
+	#grid2 .overlay {
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right:0;
+	  display:none;
+	  height: 100%;
+	  position:absolute;
+	  
+	}
+	#grid .img.hover .overlay  {
+	 display:block;
+	  width: 100%;
+	}
+	#grid2 .img.hover .overlay  {
+	 display:block;
+	  width: 100%;
+	}
+	
+	.social-media {
+		list-style: none;
+		display: inline-block;
+		margin-left:10px;
+		
+	}
+	
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+	
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+   }
+  
+
+/* ============================================================
+  PORTFOLIO 3 - SLIDE IN LEFT
+============================================================ */
+
+
+/* 
+when .item:hover, show overlay.
+overwrite .item-overlay."position"
+*/
+.port3:hover .item-overlay.content-left {
+  right: 0;
+  left: 0;
+}
+
+/* 
+by default, overlay is visible… 
+*/
+.item-overlay {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  
+  background: rgba(252, 185, 65, 0.5);
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  /* fix text transition issue for .left and .right but need to overwrite left and right properties in .right */
+  width: 100%; 
+  
+  -moz-transition: top 0.8s, right 0.8s, bottom 0.8s, left 0.8s;
+  -webkit-transition: top 0.8s, right 0.8s, bottom 0.8s, left 0.8s;
+  transition: top 0.8s, right 0.8s, bottom 0.8s, left 0.8s;
+}
+/*
+…but this hide it
+*/
+.item-overlay.content-left {
+  right: 200%;
+  left: -100%;
+}
+
+
+/*
+.item {
+  position: relative;
+  
+  border: 1px solid #333;
+  float: left;
+  margin: 2%;
+  overflow: hidden;
+  width: 21%;
+  max-width: 540px;
+}
+.item img {
+  max-width: 100%;
+}
+/* end of misc. CSS */
+
