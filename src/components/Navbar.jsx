@@ -4,7 +4,7 @@ function Navbar() {
 
 	return (
 		<>
-			<nav className="navbar navbar-inverse common-menu menu-bg" id="top-nav">
+			<nav className="navbar navbar-inverse common-menu" id="top-nav">
 				<div className="container navigation-tb">
 					<div className="navbar-header">
 						<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" className="navbar-toggle pull-left nav-icon1"><span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span></button>
@@ -15,7 +15,7 @@ function Navbar() {
 								<ul className="nav navbar-nav navbar-left no-margin accordion" id="accordion">
 									<li className="close-icon"><p className="close-btn"><i className="fa fa-times" aria-hidden="true"></i></p></li>
 									<li className="dropdown menu-fs menu">
-										<a href="/" className="pagescroll menu-link dropdown-toggle" data-toggle="dropdown">home </a>
+										<a href="/" className="pagescroll menu-link dropdown-toggle" data-toggle="dropdown">Home </a>
 									</li>
 									<li className="dropdown menu-fs menu"><a href="/about/" className="pagescroll dropdown-toggle"> About</a></li>
 									<li className="dropdown dropdown-submenu menu-fs menu"><a href="#" className="pagescroll dropdown-toggle sub-link menu-link" data-toggle="dropdown"> Services</a>
