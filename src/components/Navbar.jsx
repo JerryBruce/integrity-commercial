@@ -18,15 +18,8 @@ function Navbar() {
 										<a href="/" className="pagescroll menu-link dropdown-toggle" data-toggle="dropdown">Home </a>
 									</li>
 									<li className="dropdown menu-fs menu"><a href="/about/" className="pagescroll dropdown-toggle"> About</a></li>
-									<li className="dropdown dropdown-submenu menu-fs menu"><a href="#" className="pagescroll dropdown-toggle sub-link menu-link" data-toggle="dropdown"> Services</a>
-										<ul className="dropdown-menu dropdown-menu-1">
-											<li className="left"><a href="services-1.html">Services-1</a></li>
-											<li className="left"><a href="services-2.html">Services-2</a></li>
-											<li className="left"><a href="services-3.html">Services-3</a></li>
-										</ul>
-									</li>
 									<li className="dropdown menu-fs menu"><a href="/team/" className="pagescroll dropdown-toggle"> Our Team</a></li>
-									<li className="dropdown menu-fs menu"><a href="contact-1.html" className="pagescroll dropdown-toggle"> contact</a></li>
+									<li className="dropdown menu-fs menu"><a href="/contact" className="pagescroll dropdown-toggle"> contact</a></li>
 								</ul>
 							</div>
 						</div>

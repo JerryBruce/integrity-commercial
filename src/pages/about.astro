@@ -1,6 +1,8 @@
 ---
 import Header from '../components/Header';
 import Navbar from '../components/Navbar.jsx';
+import PreHeader from '../components/PreHeader';
+
 
 ---
 
@@ -14,8 +16,9 @@ import Navbar from '../components/Navbar.jsx';
 ></script>
 <link rel="stylesheet" href="/css/style.css"/>
 
-    <Header client:load/>
-    <Navbar client:load/>
+<PreHeader client:load/>
+<Header client:load/>
+<Navbar client:load/>
 	
 	<!--================================= ABOUT US START =============================================-->
     <section class="container-fluid section-space section-bg-1" id="about">
@@ -30,7 +33,6 @@ import Navbar from '../components/Navbar.jsx';
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="left care-top">
-						<p class="p-bottom">Our mission is to identify customers that share our values and serve their every need throughout all project phases; design, budgeting, estimating, detailing, project delivery, and closeout. </p>
 						<div class="left p-bottom">
 							<ul class="content-ul no-padding no-margin about-icon1">
                                 <li><p></p></li>

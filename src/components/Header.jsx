@@ -8,20 +8,9 @@ function Header() {
                 <div className="row">
                     <div className="col-md-10 column-center header-menu ">
                         <div style={{padding: 50}}>
-                                <h1 className="center">Integrity Commercial Openings</h1>
-                            <div className="center no-fs">
-                                <ul className="no-padding no-margin">
-                                    <li className="header-uline"></li>
-                                    <li className="uline-left-padding header-uline"></li>
-                                </ul>
-                            </div>
+                            <img src="/images/Banner.jpg" width={800}/>
                             <div className="col-md-10 column-center no-padding">
-                                <p className="center ls btn-top">Construction is defined as a process that consists of the building or assembling of infrastructure. On the other hand, a Construction Project includes all material and work necessary for the construction</p>
-                            </div>
-                            <div className="center btn-top">
-                                <a href="#">
-                                    <div className="btn-1 btn-ant">Get Started</div>
-                                </a>
+                                <p className="center ls btn-top">We build trust by delivering every job, large or small, with integrity, respect, responsibility, and an unmatched passion for helping our partnes succeed.</p>
                             </div>
                         </div>
                     </div>

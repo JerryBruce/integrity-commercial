@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header';
 import Navbar from '../components/Navbar.jsx';
+import PreHeader from '../components/PreHeader';
 
 ---
 
@@ -13,7 +14,7 @@ import Navbar from '../components/Navbar.jsx';
   defer
 ></script>
 <link rel="stylesheet" href="/css/style.css"/>
-
+<PreHeader client:load/>
 <Header client:load/>
 <Navbar client:load/>
 

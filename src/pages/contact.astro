@@ -1,19 +1,133 @@
 ---
-import Header from '../components/Header';
-import Navbar from '../components/Navbar.jsx';
-
+import Header from "../components/Header";
+import Navbar from "../components/Navbar.jsx";
 ---
 
-<link 
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
+<link
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
   rel="stylesheet"
 />
-<script 
-  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" 
-  defer
-></script>
-<link rel="stylesheet" href="/css/style.css"/>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+  defer></script>
+<link rel="stylesheet" href="/css/style.css" />
 
-    <Header client:load/>
-    <Navbar client:load/>
-	
+<Header client:load />
+<Navbar client:load />
+
+<section class="container-fluid section-space section-bg-1" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 column-center no-padding">
+        <div
+          class="col-md-6 col-sm-6 col-xs-12 common-res-bottom-1 doctors-fixed"
+        >
+          <div class="contact-bg">
+            <h3 class="left contact-heading-bottom">contact</h3>
+
+            <div class="contact-div">
+              <form method="POST" class="contact-form">
+                <div class="clearfix">
+                  <!--================= NAME INPUT BOX HERE ====================-->
+                  <div class="form-div form-bottom-1">
+                    <input
+                      class="form-control form-control3 form-text"
+                      id="name"
+                      type="text"
+                      name="name"
+                      value=""
+                      placeholder="Please Enter Name"
+                      required
+                    />
+                  </div>
+
+                  <!--================= EMAIL INPUT BOX HERE ====================-->
+                  <div class="form-div form-bottom-1">
+                    <input
+                      class="form-control form-control3 form-text"
+                      id="email1"
+                      type="email"
+                      name="email"
+                      value=""
+                      placeholder="Please Enter Email"
+                      required
+                    />
+                  </div>
+
+                  <!--================= MESSAGE INPUT BOX HERE ====================-->
+                  <div class="form-div-1">
+                    <textarea
+                      class="form-control form-control3 form-text"
+                      id="message"
+                      name="message"
+                      placeholder="Message"
+                      rows="4"
+                      required></textarea>
+                  </div>
+
+                  <div class="left dis-inline submit-reset">
+                    <!--================= SUBMIT BUTTON HERE ====================-->
+                    <div class="distab-cell-middle submit-right-pad">
+                      <input
+                        type="submit"
+                        class="btn-1"
+                        id="submit"
+                        name="submit"
+                        value="SUBMIT"
+                      />
+                    </div>
+
+                    <!--================= RESET BUTTON HERE ====================-->
+                    <input
+                      type="reset"
+                      class="btn-1 distab-cell-middle cancel"
+                      name="clear"
+                      value="RESET"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="left form-error-top" id="messageDiv">
+              <span class="form-success sucessMessage"> </span>
+              <span class="form-failure failMessage"> </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12 doctors-fixed">
+          <div class="address-bg">
+            <h3 class="left contact-heading-bottom">Get In Touch</h3>
+
+            <div class="footer-row-space res-float-left">
+              <ul class="no-padding no-margin add-br">
+                <li class="distab-cell-top">
+                  <h4 class="left contact-add">phone no:</h4>
+                </li>
+                <li class="left distab-cell-middle phone-padding">
+                  <p class="left ls">
+                    817-564-5824 <br />903-277-6643
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="res-float-left">
+              <ul class="no-padding no-margin">
+                <li class="distab-cell-top">
+                  <h4 class="left contact-add">Email:</h4>
+                </li>
+                <li class="left distab-cell-middle email-padding">
+                  <p class="left ls">
+                    <a href="#">jake@integritycommercial.net</a>
+                    <br /><a href="#">zach@integritycommercial.net</a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
