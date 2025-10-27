@@ -15,11 +15,11 @@ function Navbar() {
 								<ul className="nav navbar-nav navbar-left no-margin accordion" id="accordion">
 									<li className="close-icon"><p className="close-btn"><i className="fa fa-times" aria-hidden="true"></i></p></li>
 									<li className="dropdown menu-fs menu">
-										<a href="/" className="pagescroll menu-link dropdown-toggle" data-toggle="dropdown">Home </a>
+										<a href="/integrity-commercial/" className="pagescroll menu-link dropdown-toggle" data-toggle="dropdown">Home </a>
 									</li>
-									<li className="dropdown menu-fs menu"><a href="/about/" className="pagescroll dropdown-toggle"> About</a></li>
-									<li className="dropdown menu-fs menu"><a href="/team/" className="pagescroll dropdown-toggle"> Our Team</a></li>
-									<li className="dropdown menu-fs menu"><a href="/contact" className="pagescroll dropdown-toggle"> contact</a></li>
+									<li className="dropdown menu-fs menu"><a href="/integrity-commercial/about/" className="pagescroll dropdown-toggle"> About</a></li>
+									<li className="dropdown menu-fs menu"><a href="/integrity-commercial/team/" className="pagescroll dropdown-toggle"> Our Team</a></li>
+									<li className="dropdown menu-fs menu"><a href="/integrity-commercial/contact/" className="pagescroll dropdown-toggle"> contact</a></li>
 								</ul>
 							</div>
 						</div>
