@@ -5,7 +5,6 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://jerrybruce.github.io/integrity-commercial',
   integrations: [react()],
-  site: 'https://jerrybruce.github.io',
-  base: '/integrity-commercial'
 });
