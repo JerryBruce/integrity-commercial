@@ -1345,7 +1345,7 @@ select {
 	border: 1px solid #222222;
 	height: 40px;
 	width: 100%;
-	-moz-appearance: none;
+	-moz-appcearance: none;
 	-webkit-appearance: none;
 }
 select::-ms-expand {
