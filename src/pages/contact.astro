@@ -26,67 +26,72 @@ import Navbar from "../components/Navbar.jsx";
             <h3 class="left contact-heading-bottom">contact</h3>
 
             <div class="contact-div">
-              <form method="POST" class="contact-form">
-                <div class="clearfix">
-                  <!--================= NAME INPUT BOX HERE ====================-->
-                  <div class="form-div form-bottom-1">
-                    <input
-                      class="form-control form-control3 form-text"
-                      id="name"
-                      type="text"
-                      name="name"
-                      value=""
-                      placeholder="Please Enter Name"
-                      required
-                    />
-                  </div>
+<form 
+  method="POST" 
+  class="contact-form" 
+  name="contact"
+  action="/success/"
+  data-netlify="true" 
+  data-netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="contact" />
 
-                  <!--================= EMAIL INPUT BOX HERE ====================-->
-                  <div class="form-div form-bottom-1">
-                    <input
-                      class="form-control form-control3 form-text"
-                      id="email1"
-                      type="email"
-                      name="email"
-                      value=""
-                      placeholder="Please Enter Email"
-                      required
-                    />
-                  </div>
+  <div class="clearfix">
+    
+    <p style="display: none;">
+      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
 
-                  <!--================= MESSAGE INPUT BOX HERE ====================-->
-                  <div class="form-div-1">
-                    <textarea
-                      class="form-control form-control3 form-text"
-                      id="message"
-                      name="message"
-                      placeholder="Message"
-                      rows="4"
-                      required></textarea>
-                  </div>
+    <div class="form-div form-bottom-1">
+      <input
+        class="form-control form-control3 form-text"
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Please Enter Name"
+        required
+      />
+    </div>
 
-                  <div class="left dis-inline submit-reset">
-                    <!--================= SUBMIT BUTTON HERE ====================-->
-                    <div class="distab-cell-middle submit-right-pad">
-                      <input
-                        type="submit"
-                        class="btn-1"
-                        id="submit"
-                        name="submit"
-                        value="SUBMIT"
-                      />
-                    </div>
+    <div class="form-div form-bottom-1">
+      <input
+        class="form-control form-control3 form-text"
+        id="email1"
+        type="email"
+        name="email"
+        placeholder="Please Enter Email"
+        required
+      />
+    </div>
 
-                    <!--================= RESET BUTTON HERE ====================-->
-                    <input
-                      type="reset"
-                      class="btn-1 distab-cell-middle cancel"
-                      name="clear"
-                      value="RESET"
-                    />
-                  </div>
-                </div>
-              </form>
+    <div class="form-div-1">
+      <textarea
+        class="form-control form-control3 form-text"
+        id="message"
+        name="message"
+        placeholder="Message"
+        rows="4"
+        required></textarea>
+    </div>
+
+    <div class="left dis-inline submit-reset">
+      <div class="distab-cell-middle submit-right-pad">
+        <input
+          type="submit"
+          class="btn-1"
+          id="submit"
+          value="SUBMIT"
+        />
+      </div>
+
+      <input
+        type="reset"
+        class="btn-1 distab-cell-middle cancel"
+        value="RESET"
+      />
+    </div>
+  </div>
+</form>
             </div>
             <div class="left form-error-top" id="messageDiv">
               <span class="form-success sucessMessage"> </span>
