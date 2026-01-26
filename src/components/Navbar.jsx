@@ -25,7 +25,7 @@ function Navbar() {
                     </div>
 
                     {/* 4. The "in" class is now controlled by React state */}
-                    <div className={`collapse navbar-collapse no-padding navbar-inverse res-menu side-collapse ${isOpen ? 'in' : ''}`}>
+                    <div className={`collapse navbar-collapse no-padding navbar-inverse res-menu side-collapse ${isOpen ? '' : 'in'}`}>
                         <div id="menu-list">
                             <div className="menu-home-width no-padding">
                                 <ul className="nav navbar-nav navbar-left no-margin accordion" id="accordion">
